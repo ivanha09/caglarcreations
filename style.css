@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Copse&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, .item, sub  {
+    font-family:'Copse', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 38px;
+    text-align: center;
+    color:rgba(71, 48, 21, 0.966);
+    margin: 7px;
+}
+
+h4 {
+    font-size: 22px;
+    color: rgba(71, 48, 21, 0.966);        
+}
+
+hr {
+    border-top: 0px;
+    border-bottom: 1px #BA886C dashed;    
+}
+
+p, ul, label, input, select, #buttons, button, textArea {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    color: rgba(37, 25, 4, 0.612);
+}
+
+#personalize-ui textArea {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    color: rgba(37, 25, 4, 0.612);
+    width: 245px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+h3, label {
+    color:rgb(112, 19, 19);
+}
+
+select, textarea {
+    border:rgb(187, 187, 187) 1px solid;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+select {
+    width: 380px;
+}
+
+textarea {
+    width: 355px;
+}
+
+#personalize-ui input button, 
+#custom-first-size {
+    border-radius: 5px;
+    border:rgb(187, 187, 187) 1px solid;
+    cursor: pointer;
+    color: rgba(37, 25, 4, 0.612);
+    width: 255px;
+}
+
+input[type=submit], button {
+    width: 185px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border:rgb(187, 187, 187) 1px solid;
+    cursor: pointer;
+    color: rgba(37, 25, 4, 0.612);
+    background-color: white;
+}
+
+.custom-file-input {
+    color: white;
+    cursor: pointer;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Browse...';
+    display: inline-block;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    width: 170px;
+    border:rgb(187, 187, 187) 1px solid;
+    color: rgba(37, 25, 4, 0.612);
+    padding-left: 10px;
+}
+
+input[type=submit]:hover,
+button:hover {
+    background-color: rgb(112, 19, 19);
+    color: white;
+}
+
+.sizeColumn {
+    display: flex;
+}
+
+.sizeColumn label {
+    margin-right: 10px;
+}
+
+.select-buttons input {
+    display: none;
+}
+
+.selected {
+    border: 1px solid rgb(0, 136, 255) !important;
+}
+
+.select-buttons label {
+    padding:5px;
+    cursor:pointer;
+    -webkit-appearance: button;
+    /* WebKit */
+    -moz-appearance: button;
+    /* Mozilla */
+    -o-appearance: button;
+    /* Opera */
+    -ms-appearance: button;
+    /* Internet Explorer */
+    appearance: button;
+    /* CSS3 */
+    display: flex;
+    width: 100px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding-top: 15px;
+    color: rgba(37, 25, 4, 0.612);
+    font-size: 12px;
+}
+
+.sizeColumn label {
+    width: 70px;
+    height: 40px;
+    line-height: 14pt;
+}
+
+.sizeColumn p {
+    line-height: 0;
+}
+
+.sizeColumn {
+    width: 270px;
+}
+
+.font > label {
+    width: 110px;
+}
+
+.select-buttons label:hover {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+#canvas-container {
+    width: 855px;
+    height: 750px;
+    text-align: center;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+#canvas {
+    min-width: 855px;
+    height: 750px;
+    background-color: #f0f0f0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#personalization-app {
+    display: flex;
+    justify-content: center;
+}
+
+.personalize-ui {
+    background-color: rgb(134, 29, 29);
+    padding-left: 20px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#personalization-app > div {
+    margin: 6px;
+}
+
+#tabs-ui {
+    display: flex;
+}
+
+#tabs-ui button {
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: rgb(187, 187, 187) 1px solid;
+    font-size: 10px;
+    width: 74px;
+    height: 45px;
+    line-height: 12px;
+    border-bottom: rgb(187, 187, 187) 1px solid;
+}
+
+#tabs-ui .no-button-bottom {
+    border-bottom: none;
+}
+
+#tabs-ui button:hover {
+    border-bottom: none;
+}
+
+.ui-center {
+    text-align: center;
+    line-height: 16px;
+}
+
+#second-text-ui {
+    display: none;
+}
+
+#third-text-ui {
+    display: none;
+}
+
+#file-ui {
+    display: none;
+}

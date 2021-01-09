@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://codeconvey.com/responsive-navigation-with-centered-logo/ -->
+    <!-- https://stackoverflow.com/questions/40551345/centered-logo-in-navigation-bar -->
+    <!-- https://css-tricks.com/creating-sliding-effects-using-sticky-positioning/ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caglar Creations</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/jquery.fontpicker.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="./dist/jquery.fontpicker.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <div class="topnav">
+                <div class="logo"><a href=""><img id="logo-img" src="./img/caglar.svg" alt=""></a></div>
+                <a href="#creations" class="item">Leather Creations</a>
+                <a href="#our-story" class="item">Our Story</a>
+                <a href="#leather-care" class="item">Leather Care</a>
+                <a href="./support.html" class="item">Support</a>
+                <a href="javascript:void(0);" class="icon" onclick="myNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+             </div>
+             <div class="hero-text" >
+                <h1 data-aos="fade-up">Personalized Handmade Leather</h1>
+            </div>
+        </div>
+    </header>
+    <div class="promo">
+        <h3>Because of the large demand, orders will take a little longer to fill.
+            Thank you for your patience.</h3>
+    </div>    
+    <main class="main">
+        <span class="anchor" id="creations"></span>
+        <section class="container">
+            
+            <h2 class="each-word"
+            data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="underline">
+            Leather Creations
+           </span>
+            </h2>
+            <div class="cardgroup">
+            <div class="card-wrapper"
+            data-aos="fade-up"
+            data-aos-delay="100">
+                <div class="card-container">
+                    <img src="./img/c_wallet.jpg" alt="wallet" class="card-image">
+                    <div class="card-overlay">
+                        <a href="#wallet">
+                            <div class="card-details card-text">Learn more</div>
+                        </a>
+                        <a href="wallet.html">
+                            <div class="card-personalize card-text">Personalize</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>
+                        Leather Wallet
+                    </h3>
+                </div>      
+            </div>
+            <div class="card-wrapper"
+            data-aos="fade-up"
+            data-aos-delay="150">
+                <div class="card-container">
+                    <img src="./img/c_bookmark.jpg" alt="bookmark" class="card-image">
+                    <div class="card-overlay">
+                        <a href="#bookmark">
+                            <div class="card-details card-text">Learn more</div>
+                        </a>
+                        <a href="bookmark.html">
+                            <div class="card-personalize card-text">Personalize</div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="card-info">
+                    <h3>
+                        Leather Bookmark
+                    </h3>
+                </div>         
+            </div>
+            <div class="card-wrapper"
+            data-aos="fade-up"
+            data-aos-delay="200">
+                <div class="card-container">
+                    <img src="./img/c_ipodcase.jpg" alt="airpod" class="card-image">
+                    <div class="card-overlay">
+                        <a href="#airpod">
+                            <div class="card-details card-text">Learn more</div>
+                        </a>
+                        <a href="airpod.html">
+                            <div class="card-personalize card-text">Personalize</div>
+                        </a>
+                    </div>
+                </div>  
+                <div class="card-info">
+                    <h3>
+                        Leather AirPod Case
+                    </h3>
+                </div>    
+            </div>
+        </section>
+        <section id="our-story" class="full-container">
+
+            <div class='story-block'>
+                <h2 data-aos="fade-up">
+                    
+                    My Little <br>
+                    <span class="underline">
+                        Handcraft Shop
+                    </span>
+                </h2>
+                <p data-aos="fade-up"
+                data-aos-delay="100">
+                
+                    <span class="firstletter">H</span></span>i there, we are Caglar Creations. A small business that is trying to strive for success. I am Oliver. My family recently moved to Canada and I started this business due to my love for handcrafts. I prepare the products so that they are ready to be sold. My son manages the engraving and technology. Whereas, my daughter handles the marketing. We are fondly working together in order to provide you with good quality products that will brighten your day. Our products are customizable which allows for your own personal touch. Allow us to work with you in order to make the best gift that brings a smile to your face.
+                </p>
+            </div>
+        </section>
+        <section class="container">
+            
+            <h2 class="each-word" data-aos="fade-up">                
+                <span class="underline">
+                Reviews
+                </span>
+            </h2>
+
+            <div id="review-container"
+            data-aos="fade-up"
+            >
+                <a class="prev" onclick="plusSlides(-1)" 
+                data-aos="fade-up"
+                data-aos-delay="100">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" 
+                data-aos="fade-up"
+                data-aos-delay="200">&#10095;</a>
+            </div>        
+
+        </section>
+        <section  class="product">
+            <span class="anchor" id="wallet"></span>
+            <div class="product-row">
+                <div class="product-container" 
+                data-aos="fade-up"
+                data-aos-delay="0">
+                    <img id="expandedWalletImg" src="./img/wallet_example3.jpg">
+                </div>
+
+                <div id="thumbnail-a" class="column"
+                data-aos="fade-up"
+                data-aos-delay="50">
+                    <img src="img/wallet_example3.jpg" onclick="expandImg(this);" >
+                </div>
+                <div id="thumbnail-b" class="column"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                    <img src="img/wallet_example2.jpg" onclick="expandImg(this);">
+                </div>
+                <div id="thumbnail-c" class="column"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                    <img src="img/wallet_example1.jpg" onclick="expandImg(this);">
+                </div>
+            </div>
+
+            <div class="product-info"
+            data-aos="fade-up"
+            data-aos-delay="300"
+                        >
+                <div class="product-description-container">
+                    <h2>
+                        <span class="underline">
+                            Leather Wallet
+                        </span>
+                    </h2>
+                    <h3>Product Highlight</h3>
+                    <div class="product-features">
+                        <ul>
+                            <li>Full Grain Leather Wallet</li>
+                            <li>Custom Cowhide Leather</li>
+                            <li>RFID Blocking Technology</li>
+                        </ul>    
+                    </div>
+                    <h3>Dimensions</h3>
+                    <p>
+                        4.5" x 3.5" x 0.5"
+                    </p>
+                    <h3>Description</h3>
+                    <p>
+                        Our wallets are made from the finest vegetable tanned full-grain Argentinian leather. The perks of having the wallet made from Argentinian leather makes the wallet more vibrant and pretty with age.
+                    </p>
+                    <p>
+                        Alongside its durability, our wallets are built-in with RFID blocking to protect your identity so that it doesn’t go to the wrong hands.
+                    </p>
+                    <p>
+                        Add a personal touch to this wonderful wallet by engraving and adding a quote to the side of your choice!
+                    </p>
+                    <p>
+                        Our wallet has the capacity of 11 card slots and 1 flip-up transparent compartments for IDs, photos, etc.
+                    </p>
+                    <h3>
+                        Color Options
+                    </h3>
+                    <div>
+                        <ul class="color-row">
+                            <li>
+                                <div class="center">
+                                    <div id="brown-sample" class="sample"></div>
+                                    Brown
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="darkbrown-sample" class="sample"></div>
+                                    Dark Brown
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="black-sample" class="sample"></div>
+                                    Black
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+
+                    <h3>
+                        Engrave Options
+                    </h3>
+                    <div class="product-options">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>Initials</td>
+                                <td>Name</td>
+                                <td>Date</td>
+                                <td>Logo</td>
+                                <td>Quote</td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Front side</span> </td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Backside</span> </td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Inside right</span></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Inside left 1</span></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Inside left 2:</span></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td></td>
+                                <td></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                </div>
+                <a class="personalize-bottom" href="wallet.html">
+                    <br>
+                        <button>Personalize</button>
+                </a>
+                <br>
+                <br>
+                <a href="https://www.etsy.com/ca/listing/870439619/personalized-mens-full-grain-leather">
+                <button>Go to our shop</button>
+                </a>
+                <br>
+            </div>
+        </section>
+        <section  class="product">
+            <div class="product-row">
+                <span class="anchor" id="bookmark"></span>
+                <div class="product-container" 
+                data-aos="fade-up">
+                    <img id="expandedBookmarkImg" src="./img/bookmark_example.jpg">
+                </div>
+
+                <div id="thumbnail-a" class="column"
+                data-aos="fade-up"
+                data-aos-delay="50">
+                    <img src="img/bookmark_example.jpg" onclick="expandImg(this);" >
+                </div>
+                <div id="thumbnail-b" class="column"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                    <img src="img/bookmark_example2.jpg" onclick="expandImg(this);">
+                </div>
+                <div id="thumbnail-c" class="column"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                    <img src="img/bookmark_example3.jpg" onclick="expandImg(this);">
+                </div>
+            </div>
+            <div class="product-info"
+            data-aos="fade-up"
+            data-aos-delay="300"
+                        >
+                <div class="product-description-container">
+                    <h2>
+                        <span class="underline">
+                            Leather Bookmark
+                        </span>
+                    </h2>
+                    <h3>Product Highlight</h3>
+                    <div class="product-features">
+                        <ul>
+                            <li>Handmade</li>
+                            <li>Vegetable tanned cowhide leather</li>
+                            <li>RFID Blocking Technology</li>
+                        </ul>    
+                    </div>
+                    <h3>Dimensions</h3>
+                    <p>
+                        1.30" x 6.5"
+                    </p>
+                    <h3>Description</h3>
+                    <p>
+                        Eco-Friendly Leather: The material of the bookmark is 100% High-quality, Genuine Vegetable-tanned Cowhide Leather. Vegetable-tanned leather is tanned using vegetable matter, since vegetable tanning is a natural process, it's also eco-friendly.
+                    </p>
+                    <p>
+                    Perfect and Stylish gift for Weddings, Birthdays, Anniversaries, Weddings, Mother’s Day, Father’s Day, and any Special Events.
+                    </p> 
+                    <h3>
+                        Color Options
+                    </h3>
+                    <div>
+                        <ul class="color-row">
+                            <li>
+                                <div class="center">
+                                    <div id="brown-sample" class="sample"></div>
+                                    Brown
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="darkbrown-sample" class="sample"></div>
+                                    Dark Brown
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="navy-sample" class="sample"></div>
+                                    Navy
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="wine-sample" class="sample"></div>
+                                    Wine
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+
+                    <h3>
+                        Engrave Options
+                    </h3>
+                    <p>
+                        Your initials or name can be engraved to add a personal touch to the bookmark, you can further customize it by the following:
+                    </p>
+                    <ul>
+                        <li><span>Font Size</span> Small, Medium, and Large</li>
+                        <li>You can specify a font that you would like to use (such as Edwardian Script, Arial Black, etc.)</li>
+                        <li>You can have it written either at the bottom, top, or along the middle (refer to the images)</li>
+                        <li>You can also choose to engrave a logo or a picture of your choosing, if you want this option you will need to send that image</li>
+                    </ul>
+                    <div class="product-options">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>Initials</td>
+                                <td>Name</td>
+                                <td>Date</td>
+                                <td>Logo</td>
+                                <td>Quote</td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">Bookmark</span> </td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                            </tr>
+                        </table>
+                        <p>We can engrave any Font or Logo or Emoji. Please mention the font and size what you want.
+                        </p>
+                    </div>
+                </div>
+                <a class="personalize-bottom" href="bookmark.html">
+                    <br>
+                        <button>Personalize</button>
+                    </a>
+                <br>
+                <a href="https://www.etsy.com/ca/listing/849545739/personalized-leather-bookmark-l-handmade">
+                <br>
+                    <button>Go to our shop</button>
+                </a>
+                <br>
+            </div>
+        </section>
+        <section  class="product">
+            <div class="product-row">
+                <span class="anchor" id="airpod"></span>
+                <div class="product-container" 
+                data-aos="fade-up">
+                    <img id="expandedAirpodImg" alt="featured AirPod case image" src="./img/airpod_example.jpg">
+                </div>
+
+                <div id="thumbnail-a" class="column"
+                data-aos="fade-up"
+                data-aos-delay="50">
+                    <img src="img/airpod_example.jpg" alt='image of leather AirPod case' onclick="expandImg(this);" >
+                </div>
+                <div id="thumbnail-b" class="column"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                    <img src="img/airpod_example2.jpg" alt='various AirPod cases in different colors' onclick="expandImg(this);">
+                </div>
+                <div id="thumbnail-c" class="column"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                    <img src="img/airpod_example3.jpg" alt='AirPod case with text examples' onclick="expandImg(this);">
+                </div>
+            </div>
+            <div class="product-info"
+            data-aos="fade-up"
+            data-aos-delay="300"
+                        >
+                <div class="product-description-container">
+                    <h2>
+                        <span class="underline">
+                            Leather AirPod Case
+                        </span>
+                    </h2>
+                    <h3>Product Highlight</h3>
+                    <div class="product-features">
+                        <ul>
+                            <li>Handmade</li>
+                            <li>Genuine Crazy horse Cowhide Leather</li>
+                        </ul>    
+                    </div>
+                    <h3>Description</h3>
+                    <p>
+                        Protective, Customizable Leather Case for both Apple AirPods and Apple AirPods Pro. Protective and stylish leather case that prevents damage to Apple Wireless Bluetooth Headphones.</p>
+                    <p>
+                        Equipped with a snap fastener to easily open and close the case while also safely protecting the headphones from falling out.
+                    </p>
+                    <p>
+                        It has a sturdy lobster clasp keychain that allows the casing to be attached to handbags, purses, and belts.
+                    </p>
+                    <p>
+                        Crafted in a special way that allows both normal and wireless charging while the headphones are inside the case.
+                    </p>
+                    <p>
+                        AirPods Pro leather cases have cutouts to access the Bluetooth Pairing button and to see the Status Light. 
+                    </p>
+                    <p>
+
+                    </p>
+                        <h3>
+                        Color Options
+                    </h3>
+                    <div>
+                        <ul class="color-row">
+                            <li>
+                                <div class="center">
+                                    <div id="brown-sample" class="sample"></div>
+                                    Brown
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="darkbrown-sample" class="sample"></div>
+                                    Coffee
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="navy-sample" class="sample"></div>
+                                    Navy
+                                </div>
+                            </li>
+                            <li>
+                                <div class="center">
+                                    <div id="wine-sample" class="sample"></div>
+                                    Wine
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+
+                    <h3>
+                        Engrave Options
+                    </h3>
+                    <p>
+                        Your initials or name can be engraved to add a personal touch to the bookmark, you can further customize it by the following:
+                    </p>
+                    <ul>
+                        <li><span>Font Size</span> Small, Medium, and Large</li>
+                        <li>You can specify a font that you would like to use (such as Edwardian Script, Arial Black, etc.)</li>
+                        <li>You can have it written either at the bottom, top, or along the middle (refer to the images)</li>
+                        <li>You can also choose to engrave a logo or a picture of your choosing, if you want this option you will need to send that image</li>
+                    </ul>
+                    <div class="product-options">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td>Initials</td>
+                                <td>Name</td>
+                            </tr>
+                            <tr>
+                                <td class="row-heading"><span class="row-heading">AirPod</span> </td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                                <td class="true"><i class="fas fa-check"></i></td>
+                            </tr>
+                        </table>
+                        <p>We can engrave any Font or Logo or Emoji. Please mention the font and size what you want.
+                        </p>
+                        <p>*Item does not include AirPods</p>
+                    </div>
+                </div>
+                <a class="personalize-bottom" href="airpod.html">
+                    <br>
+                        <button>Personalize</button>
+                    </a>
+                <br>
+                <a href="https://www.etsy.com/ca/listing/820662885/airpod-case-l-airpod-pro-case-leather-l">
+                <br>
+                    <button>Go to our shop</button>
+                </a>
+                <br>
+            </div>
+        </section>
+        <section id="care">
+            <span id="leather-care"></span>
+            <h2
+            data-aos="fade-up">                
+            <span class="underline">
+                Leather Care</h2>
+            <div id="step1" class="care-card">
+                <img src="./img/leather_care1.jpg" alt="leather care by rubbing with finger"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <h3
+                data-aos="fade-left">
+                Step 1</h3>
+                <p
+                data-aos="fade-left"
+                data-aos-delay="300">Use your finger, softly rub scratches, spots, fold marks etc. </p>
+            </div>
+            <div id="step2" class="care-card">
+                <img src="./img/leather_care2.jpg" alt="leather care by rubbing with a soft dry cloth"
+                data-aos="fade-down"
+                data-aos-delay="100">
+                <h3
+                data-aos="fade-right">
+                Step 2</h3>
+                <p
+                data-aos="fade-right"
+                data-aos-delay="200">Use a soft dry cloth to rub repeatedly.</p>
+            </div>
+            <div id="step3" class="care-card">
+                <img src="./img/leather_care3.jpg" alt="leather care with white cream"
+                data-aos="fade-down"
+                data-aos-delay="100">
+                <h3
+                data-aos="fade-right"
+                data-aos-delay="0">Step 3</h3>
+                <p
+                data-aos="fade-left"
+                data-aos-delay="200">Rub repeated using transparent or white cream.</p>
+            </div>
+        </section>
+        <footer>
+            <div id="social">
+                <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div>
+                <sub>Copyright © 2020 CAGLAR CREATIONS</sub>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120, // offset (in px) from the original trigger point
+        disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      });
+    </script>
+</body>
+</html>
