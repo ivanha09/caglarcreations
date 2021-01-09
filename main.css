@@ -127,6 +127,14 @@ th {
 /* mobile */
 @media all and (max-width: 576px) {
 
+  .hide-personalize {
+    display: none;
+  }
+
+  .hero-buttons-container{
+    display: none;
+  }
+
   .full-container {
     margin-bottom: 100px;
   }
@@ -140,15 +148,15 @@ th {
   }
 
   #step1 img,
-#step2 img,
-#step3 img {
-  width: 100%;
-}
+  #step2 img,
+  #step3 img {
+    width: 100%;
+  }
 
   input[type="submit"],
-button {
-  width: 100%;
-}
+  button {
+    width: 100%;
+  }
   .topnav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -195,8 +203,8 @@ button {
   .column img:hover {
     opacity: 1;
   }
-  
-  .row {
+
+  .product-row {
     padding-top: 25px;
     grid-column: 1/2;
 
@@ -233,13 +241,13 @@ button {
     top: 50%;
     display: none;
   }
-  
+
   .card-personalize {
     display: none;
-  }  
+  }
 
   .card-overlay {
-    opacity: .9;
+    opacity: 0.9;
   }
 
   .promo {
@@ -288,7 +296,6 @@ button {
   .item {
     text-align: center;
     display: none;
-    /* border-bottom: 1px solid #111; */
   }
 
   .icon {
@@ -301,7 +308,7 @@ button {
 
   .story-block {
     background: #faf5e9;
-    padding: 50px 15px; 
+    padding: 50px 15px;
     position: relative;
   }
 
@@ -313,10 +320,6 @@ button {
     padding: 15px;
     padding-bottom: 100px;
   }
-
-  /* .product-options {
-    width: 100px;
-  } */
 
   .reviewCard {
     padding: 20px;
@@ -340,11 +343,8 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  /* width: 40%; */
 }
-
-/* .container {
-  padding-top: 2em;
-} */
 
 .card {
   width: 200px;
@@ -383,7 +383,6 @@ hr {
   line-height: 0.2em;
   text-align: center;
 }
-
 
 .firstletter {
   color: #903;
@@ -475,6 +474,28 @@ h4 {
 /* desktop */
 @media (min-width: 768px) {
 
+  .hero-buttons-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .hero-button {
+    border: rgb(112, 19, 19) 1px solid;
+    text-decoration: none;
+    background-color: rgba(112, 19, 19, 0.678);
+    color: rgb(225, 224, 210);
+    padding: 15px;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .hero-button:hover {
+    border: rgb(112, 19, 19) 1px solid;
+    background-color: rgb(112, 19, 19);
+  }
+
   .promo {
     margin: 0;
   }
@@ -491,91 +512,91 @@ h4 {
     width: 1080px;
     max-width: 80%;
     margin: 0 auto;
-  
+
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     column-gap: 40px;
     row-gap: 10px;
   }
-  
+
   #step1 img {
     grid-column: 1/2;
     grid-row: 1/3;
   }
-  
+
   #step1 h3 {
     grid-column: 2/3;
     font-size: 32px;
     align-self: end;
   }
-  
+
   #step1 p {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: start;
-  
+
     position: sticky;
     top: 150px;
   }
-  
+
   #step2 {
     width: 1080px;
     max-width: 80%;
     margin: 0 auto;
-  
+
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     column-gap: 40px;
     row-gap: 10px;
   }
-  
+
   #step2 img {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  
+
   #step2 h3 {
     grid-column: 1/2;
     font-size: 32px;
     align-self: end;
   }
-  
+
   #step2 p {
     grid-column: 1/2;
     grid-row: 2/3;
     align-self: start;
-  
+
     position: sticky;
     top: 150px;
   }
-  
+
   #step3 {
     width: 1080px;
     max-width: 80%;
     margin: 0 auto;
-  
+
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     column-gap: 40px;
     row-gap: 10px;
   }
-  
+
   #step3 img {
     border: rgb(112, 19, 19) 1px solid;
     grid-column: 1/2;
     grid-row: 1/3;
   }
-  
+
   #step3 h3 {
     grid-column: 2/3;
     grid-row: 1/2;
     font-size: 32px;
     align-self: start;
   }
-  
+
   #step3 p {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -583,26 +604,26 @@ h4 {
   }
 
   input[type="submit"],
-button {
-  width: 185px;
-}
+  button {
+    width: 185px;
+  }
   .card-overlay {
     height: 100%;
-    background-color:rgb(134, 29, 29);
+    background-color: rgb(134, 29, 29);
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
 
   .card-details {
     top: 38%;
   }
-  
+
   .card-personalize {
     top: 62%;
-  }  
+  }
 
   .card-container:hover .card-overlay {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   h2 {
@@ -638,6 +659,7 @@ button {
   .cardgroup {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 100px;
   }
 
   .card {
@@ -660,7 +682,6 @@ button {
     background-size: cover;
     position: relative;
   }
-
 
   .story-block {
     background: #faf5e9;
@@ -706,7 +727,6 @@ button {
     grid-template-columns: auto auto;
     grid-gap: 2em;
     margin: 200px 0;
-    /* background-color:rgb(136, 27, 27); */
   }
 
   .product-row {
@@ -761,7 +781,6 @@ button {
   .reviewCard {
     padding: 100px;
   }
-
 }
 
 #social a {
@@ -801,9 +820,6 @@ label {
   visibility: hidden;
 }
 
-
-
-
 /* .shadow {
     border: #111 red solid;
     -webkit-box-shadow: -2px 0px 18px -4px rgba(0,0,0,0.65); 
@@ -827,7 +843,6 @@ textarea {
 
 #personalize-ui input {
   border-radius: 5px;
-  /* padding: 0px 10px; */
   border: rgb(187, 187, 187) 1px solid;
   cursor: pointer;
   color: rgba(37, 25, 4, 0.612);
@@ -986,6 +1001,7 @@ button:hover {
 .header {
   margin: 0;
 }
+
 .promo {
   display: flex;
   justify-content: center;
@@ -1003,11 +1019,6 @@ button:hover {
   height: 100px;
 }
 
-.deal {
-  text-decoration: line-through;
-}
-
-
 .row-heading {
   color: rgb(134, 29, 29);
   text-align: left;
@@ -1015,11 +1026,8 @@ button:hover {
   margin-left: 4px;
 }
 
-/*  */
-
 .card-container {
   position: relative;
-  /* width: 25%; */
   margin: 20px;
   border: rgb(112, 19, 19) 0.05px solid;
   border-radius: 15px;
@@ -1042,10 +1050,6 @@ button:hover {
   border-radius: 15px;
 }
 
-
-
-
-
 .card-text {
   color: white;
   font-size: 20px;
@@ -1057,22 +1061,23 @@ button:hover {
   text-align: center;
   border: 1px solid red;
   width: 50%;
-  padding: .8em 0;
+  padding: 0.8em 0;
 }
 
 .card-text:hover {
   background-color: firebrick;
 }
 
-
 .card-info {
   text-align: center;
 }
 
+.card-info a {
+  text-decoration: none;
+}
+
 footer {
   height: 200px;
-  /* background-color:rgb(59, 11, 11); */
-  /* background-color:rgb(34, 34, 34); */
   text-align: center;
   padding: 10px 0 40px 0;
 }
@@ -1087,6 +1092,8 @@ footer h2 {
 .text-mandatory {
   font-size: 10pt;
 }
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { } */
