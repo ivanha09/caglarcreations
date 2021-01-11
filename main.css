@@ -129,9 +129,6 @@ th {
   background-color: rgba(37, 25, 4, 0.1);
 }
 
-
-
-
 .card-cost {
   visibility: hidden;
 }
@@ -174,6 +171,7 @@ button {
   cursor: pointer;
   color: rgba(37, 25, 4, 0.612);
   background-color: white;
+  margin-bottom: 1px;
 }
 
 input[type="submit"]:hover,
