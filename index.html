@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- https://codeconvey.com/responsive-navigation-with-centered-logo/ -->
-    <!-- https://stackoverflow.com/questions/40551345/centered-logo-in-navigation-bar -->
-    <!-- https://css-tricks.com/creating-sliding-effects-using-sticky-positioning/ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caglar Creations</title>
@@ -14,7 +11,6 @@
     <link rel="stylesheet" href="./dist/jquery.fontpicker.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="./dist/jquery.fontpicker.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="data.js"></script>
     <script src="index.js"></script>
 </head>
@@ -27,23 +23,12 @@
                 <a href="#our-story" class="item">Our Story</a>
                 <a href="#leather-care" class="item">Leather Care</a>
                 <a href="./support.html" class="item">Support</a>
-                <a href="javascript:void(0);" class="icon" onclick="myNav()">
+                <a href="javascript:void(0);" class="icon" onclick="showHamburgerMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
              </div>
              <div class="hero-text" >
                 <h1 data-aos="fade-up">Personalized Leather Goods</h1>
-                <!-- <div class="hero-buttons-container">
-                    <a href="wallet.html" class="hero-button">
-                            wallet
-                    </a>
-                    <a href="bookmark.html" class="hero-button">
-                            bookmark
-                    </a>
-                    <a href="airpod.html" class="hero-button">
-                            AirPod Case
-                    </a>
-                </div> -->
             </div>
 
 
@@ -178,17 +163,17 @@
                     <img id="expandedWalletImg" src="./img/wallet_example3.jpg">
                 </div>
 
-                <div id="thumbnail-a" class="column"
+                <div id="thumbnail-a" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="50">
                     <img src="img/wallet_example3.jpg" onclick="expandImg(this);" >
                 </div>
-                <div id="thumbnail-b" class="column"
+                <div id="thumbnail-b" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="100">
                     <img src="img/wallet_example2.jpg" onclick="expandImg(this);">
                 </div>
-                <div id="thumbnail-c" class="column"
+                <div id="thumbnail-c" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="200">
                     <img src="img/wallet_example1.jpg" onclick="expandImg(this);">
@@ -335,17 +320,17 @@
                     <img id="expandedBookmarkImg" src="./img/bookmark_example.jpg">
                 </div>
 
-                <div id="thumbnail-a" class="column"
+                <div id="thumbnail-a" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="50">
                     <img src="img/bookmark_example.jpg" onclick="expandImg(this);" >
                 </div>
-                <div id="thumbnail-b" class="column"
+                <div id="thumbnail-b" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="100">
                     <img src="img/bookmark_example2.jpg" onclick="expandImg(this);">
                 </div>
-                <div id="thumbnail-c" class="column"
+                <div id="thumbnail-c" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="200">
                     <img src="img/bookmark_example3.jpg" onclick="expandImg(this);">
@@ -468,17 +453,17 @@
                     <img id="expandedAirpodImg" alt="featured AirPod case image" src="./img/airpod_example.jpg">
                 </div>
 
-                <div id="thumbnail-a" class="column"
+                <div id="thumbnail-a" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="50">
                     <img src="img/airpod_example.jpg" alt='image of leather AirPod case' onclick="expandImg(this);" >
                 </div>
-                <div id="thumbnail-b" class="column"
+                <div id="thumbnail-b" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="100">
                     <img src="img/airpod_example2.jpg" alt='various AirPod cases in different colors' onclick="expandImg(this);">
                 </div>
-                <div id="thumbnail-c" class="column"
+                <div id="thumbnail-c" class="column-thumbnail"
                 data-aos="fade-up"
                 data-aos-delay="200">
                     <img src="img/airpod_example3.jpg" alt='AirPod case with text examples' onclick="expandImg(this);">

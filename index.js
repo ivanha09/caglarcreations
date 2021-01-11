@@ -1,4 +1,4 @@
-function myNav() {
+function showHamburgerMenu() {
   let items = Array.prototype.slice.apply(document.querySelectorAll(".item"));
 
   items.forEach((item) => {

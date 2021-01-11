@@ -1,5 +1,3 @@
-
-
 var pxl = 3.7795275591;
 var flarge = 12 * pxl;
 var fmedium = 10 * pxl;
@@ -248,8 +246,6 @@ function rotateSelect(obj) {
   layer.draw();
 }
 
-
-
 document.getElementById('file_input').addEventListener(
     'change', function(e) {
       stage.find('.theImg').destroy();
@@ -292,7 +288,6 @@ document.getElementById('file_input').addEventListener(
       }
     }
   );
-
 
 let updateX = 1;
 function imgSizeSelect(number) {
