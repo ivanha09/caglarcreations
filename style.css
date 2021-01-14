@@ -1,53 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Copse&display=swap');
-
-html, body {
-    height: 100%;
-}
-
-h1, h2, h3, h4, .item, sub  {
-    font-family:'Copse', Georgia, 'Times New Roman', Times, serif;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 38px;
-    text-align: center;
-    color:rgba(71, 48, 21, 0.966);
-    margin: 7px;
-}
-
-h4 {
-    font-size: 22px;
-    color: rgba(71, 48, 21, 0.966);        
-}
-
-hr {
-    border-top: 0px;
-    border-bottom: 1px #BA886C dashed;    
-}
-
-p, ul, label, input, select, #buttons, button, textArea {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.8em;
-    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-    color: rgba(37, 25, 4, 0.612);
-}
-
 #personalize-ui textArea {
     font-size: 14px;
     line-height: 1.4em;
     font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
     color: rgba(37, 25, 4, 0.612);
     width: 245px;
-}
-
-.container {
-    max-width: 1250px;
-    margin: 0 auto;
 }
 
 h3, label {
@@ -90,6 +46,7 @@ input[type=submit], button {
 .custom-file-input {
     color: white;
     cursor: pointer;
+    width: 175px;
 }
 
 .custom-file-input::-webkit-file-upload-button {
@@ -169,10 +126,6 @@ button:hover {
 
 .sizeColumn {
     width: 270px;
-}
-
-.font > label {
-    width: 110px;
 }
 
 .select-buttons label:hover {

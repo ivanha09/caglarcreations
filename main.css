@@ -27,6 +27,26 @@ h4 {
   color: rgba(71, 48, 21, 0.966);
 }
 
+.large-font {
+  font-size: 24pt;
+}
+
+.trash-font {
+  font-size: 20pt;
+}
+
+.icon-size {
+  font-size: 20pt;
+}
+
+.medium-font {
+  font-size: 18pt;
+}
+
+.small-font {
+  font-size: 12pt
+}
+
 .underline {
   border-bottom: 1px #ba886c dashed;
 }
@@ -278,10 +298,6 @@ button:hover {
 
 .font > label {
   width: 110px;
-}
-
-.select-buttons label:hover {
-  border: 1px solid rgb(128, 128, 128);
 }
 
 .size {

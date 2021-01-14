@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- https://codeconvey.com/responsive-navigation-with-centered-logo/ -->
-    <!-- https://stackoverflow.com/questions/40551345/centered-logo-in-navigation-bar -->
-    <!-- https://css-tricks.com/creating-sliding-effects-using-sticky-positioning/ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caglar Creations</title>
@@ -42,8 +39,6 @@
                         <p>(Drag text to desired position.)</p>
                     </div>
                     <div id="personalize-ui">
-
-                        <!-- <form class="personalize" onSubmit="return false;" action="https://httpbin.org/post" method="POST"> -->
                         <form class="personalize" action="https://httpbin.org/post" method="POST">
                             <div id="tabs-ui">
                                 <div>
@@ -74,21 +69,21 @@
                                             <label for="img-size" onclick="imgSizeSelect(.025);">
                                                 <input type="radio" id="img-increase" name="img-size">
                                                 <div class="ui-center">
-                                                    <span style="font-size: 18pt;">+</span>
+                                                    <span class="medium-font">+</span>
                                                     <br>Increase size
                                                 </div>
                                             </label>
                                             <label for="img-size" onclick="imgSizeSelect(-.025);">
                                                 <input type="radio" id="img-decrease" name="img-size">
                                                 <div class="ui-center">
-                                                    <span style="font-size: 18pt;">-</span>
+                                                    <span class="medium-font">-</span>
                                                     <br>Decrease size
                                                 </div>
                                             </label>
                                             <label for="img-size" onclick="imgSizeSelect(-.25);">
                                                 <input type="radio" id="img-decrease-xtwo" name="img-size">
                                                 <div class="ui-center">
-                                                    <span style="font-size: 18pt;">--</span>
+                                                    <span class="medium-font">--</span>
                                                     <br>Decrease x2
                                                 </div>
                                             </label>
@@ -102,7 +97,7 @@
                                             <label for="img-delete" onclick="imgDeleteSelect();">
                                                 <input type="radio" name="img-delete">
                                                 <div class="ui-center">
-                                                    <span style="font-size: 20pt;"><i class="far fa-trash-alt"></i></span>
+                                                    <span class="icon-size"><i class="far fa-trash-alt"></i></span>
                                                     <br>Delete Image
                                                 </div>
                                             </label>
@@ -131,21 +126,21 @@
                                         <label for="flarge" onclick="firstSizeSelect(this)">
                                             <input type="radio" value="flarge" name="first-size" id="flarge">
                                             <div class="ui-center">
-                                                <span style="font-size: 24pt;">Aa</span>
+                                                <span class="large-font">Aa</span>
                                                 <br>Large
                                             </div>
                                         </label>
                                         <label for="fmedium" onclick="firstSizeSelect(this)" class="selected">
                                             <input type="radio" value="fmedium" name="first-size" id="fmedium" checked="checked">
                                             <div class="ui-center">
-                                                <span style="font-size: 18pt;">Aa</span>
+                                                <span class="medium-font">Aa</span>
                                                 <br>Medium
                                             </div>
                                         </label>
                                         <label for="fsmall" onclick="firstSizeSelect(this)">
                                             <input type="radio" value="fsmall" name="first-size" id="fsmall">
                                             <div class="ui-center">
-                                                <span style="font-size: 12pt;">Aa</span>
+                                                <span class="small-font">Aa</span>
                                                 <br>Small
                                             </div>
                                         </label>
@@ -166,7 +161,7 @@
                                             <label for="rotate" onclick="rotateSelect(firstText)">
                                                 <input type="radio" id="rotate" name="rotate">
                                                 <div class="ui-center">
-                                                    <i class="fas fa-sync-alt" style="font-size: 12pt;"></i>
+                                                    <i class="fas fa-sync-alt" class="small-font"></i>
                                                     <br>Rotate
                                                 </div>
                                             </label>
@@ -187,14 +182,14 @@
                                         <label for="second-text-add" onclick="textAdd(secondText);">
                                             <input type="radio" name="second-text-add">
                                             <div class="ui-center">
-                                                <span style="font-size: 20pt;">+</span>
+                                                <span class="icon-size">+</span>
                                                 <br>Add Textbox
                                             </div>
                                         </label>
                                         <label for="img-delete" onclick="textHide(secondText);">
                                             <input type="radio" name="img-delete">
                                             <div class="ui-center">
-                                                <span style="font-size: 20pt;">-</span>
+                                                <span class="icon-size">-</span>
                                                 <br>Hide Textbox
                                             </div>
                                         </label>
@@ -221,28 +216,28 @@
                                         <label for="iUpMedium" onclick="secondSizeSelect(this)">
                                             <input type="radio" value="iUpMedium" name="second-size" id='iUpMedium'>
                                             <div class="ui-center">
-                                                <span style="font-size: 14pt;">M</span>
+                                                <span class=medium-font>M</span>
                                                 <br>Uppercase
                                             </div>
                                         </label>
                                         <label for="iLoMedium" onclick="secondSizeSelect(this)" class="selected" id='iLoMedium'>
                                             <input type="radio" value="iLoMedium" name="second-size" checked="checked">
                                             <div class="ui-center">
-                                                <span style="font-size: 14pt;">m</span>
+                                                <span class=medium-font>m</span>
                                                 <br>Lowercase
                                             </div>
                                         </label>
                                         <label for="iUpSmall" onclick="secondSizeSelect(this)">
                                             <input type="radio" value="iUpSmall" name="second-size" id='iUpSmall'>
                                             <div class="ui-center">
-                                                <span style="font-size: 12pt;">S</span>
+                                                <span class="small-font">S</span>
                                                 <br>Uppercase
                                             </div>
                                         </label>
                                         <label for="iLoSmall" onclick="secondSizeSelect(this)">
                                             <input type="radio" value="iLoSmall" name="second-size" id='iLoSmall'>
                                             <div class="ui-center">
-                                                <span style="font-size: 12pt;">s</span>
+                                                <span class="small-font">s</span>
                                                 <br>Lowercase
                                             </div>
                                         </label>
@@ -262,14 +257,14 @@
                                         <label for="second-text-add" onclick="textAdd(thirdText);">
                                             <input type="radio" name="second-text-add">
                                             <div class="ui-center">
-                                                <span style="font-size: 20pt;">+</span>
+                                                <span class="icon-size">+</span>
                                                 <br>Add Textbox
                                             </div>
                                         </label>
                                         <label for="img-delete" onclick="textHide(thirdText);">
                                             <input type="radio" name="img-delete">
                                             <div class="ui-center">
-                                                <span style="font-size: 20pt;">-</span>
+                                                <span class="icon-size">-</span>
                                                 <br>Hide Textbox
                                             </div>
                                         </label>
@@ -296,28 +291,28 @@
                                         <label for="iUpMediumThree" onclick="sizeSelect(this)">
                                             <input type="radio" value="iUpMedium" name="third-size" id='iUpMediumThree'>
                                             <div class="ui-center">
-                                                <span style="font-size: 14pt;">M</span>
+                                                <span class=medium-font>M</span>
                                                 <br>Uppercase
                                             </div>
                                         </label>
                                         <label for="iLoMediumThree" onclick="sizeSelect(this)" class="selected" id='iLoMediumThree'>
                                             <input type="radio" value="iLoMedium" name="third-size" checked="checked">
                                             <div class="ui-center">
-                                                <span style="font-size: 14pt;">m</span>
+                                                <span class=medium-font>m</span>
                                                 <br>Lowercase
                                             </div>
                                         </label>
                                         <label for="iUpSmallThree" onclick="sizeSelect(this)">
                                             <input type="radio" value="iUpSmall" name="third-size" id='iUpSmallThree'>
                                             <div class="ui-center">
-                                                <span style="font-size: 12pt;">S</span>
+                                                <span class="small-font">S</span>
                                                 <br>Uppercase
                                             </div>
                                         </label>
                                         <label for="iLoSmallThree" onclick="sizeSelect(this)">
                                             <input type="radio" value="iLoSmall" name="third-size" id='iLoSmallThree'>
                                             <div class="ui-center">
-                                                <span style="font-size: 12pt;">s</span>
+                                                <span class="small-font">s</span>
                                                 <br>Lowercase
                                             </div>
                                         </label>
@@ -340,7 +335,6 @@
         </section>
     </main>
 
-    <!-- <script src="personalize.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>
