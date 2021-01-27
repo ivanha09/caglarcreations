@@ -136,6 +136,7 @@ var firstText = new Konva.Text({
     },
 });
 
+//inner wallet left
 var secondText = new Konva.Text({
   x: 195,
   y: 625,
@@ -151,13 +152,14 @@ var secondText = new Konva.Text({
     draggable: true,
     name: 'textNode',
     offset: {
-      x: 250,
+      x: 240,
       y: 70,
     },
 });
 
+//innner wallet right
 var thirdText = new Konva.Text({
-  x: 700,
+  x: 680,
   y: 625,
   text:
     "After typing in your\n message drag it to the\n desired position.",
